@@ -16,8 +16,11 @@ public class Pergunta {
 
     private String titulo;
 
+    private String tipo;
+
     @JsonIgnore
     @OneToMany(mappedBy="pergunta")
     private List<Alternativa> alternativas;
+
 
 }
